@@ -10845,6 +10845,52 @@ static int32 jobchange_killclone(block_list *bl, va_list ap)
  **/
 bool pc_jobchange(map_session_data *sd,int32 job, char upper)
 {
+	switch (job) {
+		//job 1
+		case JOB_NOVICE:
+		case JOB_SWORDMAN:
+		case JOB_MAGE:
+		case JOB_ARCHER:
+		case JOB_ACOLYTE:
+		case JOB_MERCHANT:
+		case JOB_THIEF:
+		//job 2-1
+			case JOB_KNIGHT:
+			case JOB_WIZARD:
+			case JOB_HUNTER:
+			case JOB_PRIEST:
+			case JOB_BLACKSMITH:
+			case JOB_ASSASSIN:
+		//job 2-2
+		case JOB_CRUSADER:
+		case JOB_SAGE:
+		case JOB_BARD:
+		case JOB_DANCER:
+		case JOB_MONK:
+		case JOB_ALCHEMIST:
+		case JOB_ROGUE:
+			//job 3-1 //change all sprites to job4th
+			case JOB_RUNE_KNIGHT:
+			case JOB_WARLOCK:
+			case JOB_RANGER:
+			case JOB_ARCH_BISHOP:
+			case JOB_MECHANIC:
+			case JOB_GUILLOTINE_CROSS:
+			case JOB_ROYAL_GUARD:
+			case JOB_SORCERER:
+			case JOB_MINSTREL:
+			case JOB_WANDERER:
+			case JOB_SURA:
+			case JOB_GENETIC:
+			case JOB_SHADOW_CHASER:
+
+			break;
+
+		default:
+			clif_displaymessage(sd->fd, "This job is disabled.");
+			return false;
+	}
+
 	int32 i, fame_flag = 0;
 
 	nullpo_retr(false,sd);
