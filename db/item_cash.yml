@@ -31,6 +31,27 @@
 Header:
   Type: ITEM_CASH_DB
   Version: 1
+Body:
+  - Tab: Consumables
+    Items:
+      - Item: Light_White_Pot_Box
+        Price: 25
+      - Item: Blue_Potion
+        Price: 2
+      - Item: Yggdrasilberry
+        Price: 5  
+      - Item: STR_Biscuit_Stick
+        Price: 1
+      - Item: VIT_Biscuit_Stick
+        Price: 1
+      - Item: AGI_Biscuit_Stick
+        Price: 1
+      - Item: INT_Biscuit_Stick
+        Price: 1
+      - Item: DEX_Biscuit_Stick
+        Price: 1
+      - Item: LUK_Biscuit_Stick
+        Price: 1
 
 Footer:
   Imports:
