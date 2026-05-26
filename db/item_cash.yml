@@ -52,6 +52,28 @@ Body:
         Price: 1
       - Item: LUK_Biscuit_Stick
         Price: 1
+  - Tab: Scrolls
+    Items:
+      - Item: Blessing_10_Scroll
+        Price: 1
+      - Item: F_Blessing10_Box50
+        Price: 25  
+      - Item: E_Inc_Agi_10_Scroll
+        Price: 1
+      - Item: F_Inc_Agi_10_Box50
+        Price: 25
+  - Tab: Other
+    Items:
+      - Item: Oridecon
+        Price: 1
+      - Item: Elunium
+        Price: 1  
+      - Item: Token_Of_Siegfried_Box
+        Price: 10
+      - Item: Clothing_Dye_Coupon
+        Price: 500
+      - Item: Clothing_Dye_Coupon_II
+        Price: 500          
 
 Footer:
   Imports:
