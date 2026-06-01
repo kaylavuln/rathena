@@ -10869,20 +10869,44 @@ bool pc_jobchange(map_session_data *sd,int32 job, char upper)
 		case JOB_MONK:
 		case JOB_ALCHEMIST:
 		case JOB_ROGUE:
-			//job 3-1 //change all sprites to job4th
-			case JOB_RUNE_KNIGHT:
-			case JOB_WARLOCK:
-			case JOB_RANGER:
-			case JOB_ARCH_BISHOP:
-			case JOB_MECHANIC:
-			case JOB_GUILLOTINE_CROSS:
-			case JOB_ROYAL_GUARD:
-			case JOB_SORCERER:
-			case JOB_MINSTREL:
-			case JOB_WANDERER:
-			case JOB_SURA:
-			case JOB_GENETIC:
-			case JOB_SHADOW_CHASER:
+			//Transcendent to rebirth 1
+			case JOB_NOVICE_HIGH:
+			case JOB_SWORDMAN_HIGH:
+			case JOB_MAGE_HIGH:
+			case JOB_ARCHER_HIGH:
+			case JOB_ACOLYTE_HIGH:
+			case JOB_MERCHANT_HIGH:
+			case JOB_THIEF_HIGH:
+		    //job 2-1 Transcendent
+		case JOB_LORD_KNIGHT:
+		case JOB_HIGH_PRIEST:
+		case JOB_HIGH_WIZARD:
+		case JOB_WHITESMITH:
+		case JOB_SNIPER:
+		case JOB_ASSASSIN_CROSS:
+		    //job 2-2 Transcendent
+			case JOB_PALADIN:
+			case JOB_CHAMPION:
+			case JOB_PROFESSOR:
+			case JOB_STALKER:
+			case JOB_CREATOR:
+			case JOB_CLOWN:
+			case JOB_GYPSY:
+			//job 3-1 Transcendent
+		case JOB_RUNE_KNIGHT_T:
+		case JOB_WARLOCK_T:
+		case JOB_RANGER_T:
+		case JOB_ARCH_BISHOP_T:
+		case JOB_MECHANIC_T:
+		case JOB_GUILLOTINE_CROSS_T:
+			//job 3-2 Transcendent
+			case JOB_ROYAL_GUARD_T:
+			case JOB_SORCERER_T:
+			case JOB_MINSTREL_T:
+			case JOB_WANDERER_T:
+			case JOB_SURA_T:
+			case JOB_GENETIC_T:
+			case JOB_SHADOW_CHASER_T:
 
 			break;
 
