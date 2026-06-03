@@ -47,7 +47,7 @@ Header:
 
 Footer:
   Imports:
-  - Path: db/pre-re/status.yml
+  - Path: db/re/status.yml
     Mode: Prerenewal
   - Path: db/re/status.yml
     Mode: Renewal

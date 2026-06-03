@@ -144,7 +144,7 @@ Header:
 
 Footer:
   Imports:
-  - Path: db/pre-re/skill_db.yml
+  - Path: db/re/skill_db.yml
     Mode: Prerenewal
   - Path: db/re/skill_db.yml
     Mode: Renewal

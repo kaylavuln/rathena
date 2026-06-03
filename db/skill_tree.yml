@@ -42,7 +42,7 @@ Header:
 
 Footer:
   Imports:
-  - Path: db/pre-re/skill_tree.yml
+  - Path: db/re/skill_tree.yml
     Mode: Prerenewal
   - Path: db/re/skill_tree.yml
     Mode: Renewal
