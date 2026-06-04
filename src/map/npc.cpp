@@ -3049,7 +3049,8 @@ uint8 npc_selllist(map_session_data* sd, int32 list_length, const PACKET_CZ_PC_S
 	{
 		t_itemid nameid;
 		int32 amount, idx, value;
-
+		int req_idx; // Required item for selling, if any rebalancing for auto hunting / bot enabled
+		
 		idx    = item_list[i].index - 2;
 		amount = item_list[i].amount;
 
@@ -3077,7 +3078,15 @@ uint8 npc_selllist(map_session_data* sd, int32 list_length, const PACKET_CZ_PC_S
 		if (battle_config.rental_item_novalue && sd->inventory.u.items_inventory[idx].expire_time)
 			value = 0;
 		else
-			value = pc_modifysellvalue(sd, sd->inventory_data[idx]->value_sell);
+		{
+			int req_idx = pc_search_inventory(sd, 7227); // TCG Card
+
+			if (req_idx == -1) {
+				value = 0;
+			} else {
+				value = pc_modifysellvalue(sd, sd->inventory_data[idx]->value_sell);
+			}
+		}
 
 		z+= (double)value*amount;
 	}
