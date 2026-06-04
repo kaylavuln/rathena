@@ -636,7 +636,7 @@ Body:
       Baby_Soul_Reaper: true
       Star_Emperor2: true
       Baby_Star_Emperor2: true
-    MaxBaseLevel: 200
+    MaxBaseLevel: 99
     BaseExp:
       - Level: 1
         Exp: 658
