@@ -10869,6 +10869,10 @@ bool pc_jobchange(map_session_data *sd,int32 job, char upper)
 		case JOB_MONK:
 		case JOB_ALCHEMIST:
 		case JOB_ROGUE:
+		//extend classes
+		case JOB_GUNSLINGER:
+		case JOB_NINJA:
+		case JOB_TAEKWON:
 			//Transcendent to rebirth 1
 			case JOB_NOVICE_HIGH:
 			case JOB_SWORDMAN_HIGH:
